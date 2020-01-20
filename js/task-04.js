@@ -3,9 +3,9 @@
 const credits = 23580;
 const pricePerDroid = 3000 ;
 
-let message
-const wantDroid = prompt (' Количество дроидов, которые Вы хотите купить');
-const totalPrice = wantDroid * pricePerDroid;
+let message;
+const wantDroid = prompt(' Количество дроидов, которые Вы хотите купить');
+const totalPrice = Number(wantDroid) * pricePerDroid;
 const creditsLeft = credits - totalPrice;
 
 if (wantDroid === null) {

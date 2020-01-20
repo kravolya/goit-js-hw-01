@@ -28,7 +28,7 @@ switch (deliveryCountryLow) {
         break;
     
     default: 
-        alert ('В вашей стране доставка не доступна');
+        message = 'В вашей стране доставка не доступна';
     
 
 }

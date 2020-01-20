@@ -1,27 +1,17 @@
 // ЗАДАНИЕ 3
 'use strict';
 
-const PASSWORD = "kravolya";
-const PASSWORD2 = "kravolya1";
+const ADMIN_PASSWORD = 'jqueryismyjam';
+let message;
+const userInput = prompt('Введите пароль');
 
-const name1 = 'Olha';
-const name2 = 'Olha1';
-
-const userInput = prompt('Input password');
-
-console.log(userInput);
-if (userInput === PASSWORD) {
-    console.log(`Добро пожаловать ${name1}`);
+if (userInput === ADMIN_PASSWORD) {
+    message = 'Добро пожаловать!';
 }
-
-else if (userInput === PASSWORD2) {
-    console.log(`Добро пожаловать ${name1}`);
+else if (userInput === null) {
+    message = 'Отменено пользователем!';
 }
 else {
-    console.log(`Доступ запрещен, неверный пароль!`);
+    message = 'Доступ запрещен, неверный пароль!';
 }
-
-
-
-
-
+alert (message);
